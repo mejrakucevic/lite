@@ -1,5 +1,17 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    opacity: 1; /* Fade in to full opacity */
+  }
+}
+
 body {
   background-color: #171717;
+  animation-name: fadeIn; /* Name of the animation */
+  animation-duration: 2s; /* Duration of the animation */
+  animation-fill-mode: forwards; /* Maintain final state after animation */
 }
 .container {
   display: flex;
@@ -10,20 +22,25 @@ body {
 }
 
 h1 {
-  font-family: Arial, sans-serif; /* Adjust font family as needed */
   color: #8d8d8d; /* Adjust text color as needed */
+  font-size: 4.5rem;
 }
 
 button {
   padding: 10px 20px; /* Adjust padding as needed */
+  width: 150%;
   background-color: #007bff; /* Adjust button color as needed */
   color: #e0e0e0; /* Adjust button text color as needed */
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px; /* Adjust font size as needed */
+  font-size: 32px; /* Adjust font size as needed */
 }
 
 button:hover {
   background-color: #0056b3; /* Adjust hover color as needed */
+}
+
+.h1ex {
+  font-size: 1rem;
 }
