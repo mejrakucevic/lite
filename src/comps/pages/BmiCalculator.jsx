@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../BmiCalc.css";
+import { Link } from "react-router-dom";
 
 function Main() {
   const [age, setAge] = useState();
@@ -43,7 +44,13 @@ function Main() {
       <>
         <body>
           <form onSubmit={handleCalculations}>
-            <h1>BMI Calculator</h1>
+            <h1 className="bmiH1">Let's start with calculating your BMI</h1>
+            <p className="bmiP">
+              BMI, short for Body Mass Index, is a handy tool that helps you
+              understand if your weight is healthy for your height. It's like a
+              quick snapshot of your body composition, letting you know if
+              you're underweight, normal, overweight, or obese.
+            </p>
             <div className="user-input">
               <h4>Age</h4>
               <input
@@ -87,9 +94,12 @@ function Main() {
             </div>{" "}
           </form>
           <div className="results" id="result">
-            <h3>Your BMI is : {bmi}</h3>
+            <h3>BMI: {bmi}</h3>
             <p className="p-msg">{msg}</p>{" "}
           </div>
+          <Link to="/caloriecounter">
+            <button className="nextBtn">Next</button>
+          </Link>
         </body>
       </>
     </div>

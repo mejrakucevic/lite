@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BmiCalc from "./comps/pages/BmiCalculator";
 import Landing from "./comps/Landing";
+import CalorieCalc from "./comps/pages/CalorieCounter";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,11 +18,11 @@ root.render(
           element={
             <>
               <Landing />
-              <BmiCalc />
             </>
           }
         />
         <Route path="/bmicalc" element={<BmiCalc />} />
+        <Route path="/caloriecounter" element={<CalorieCalc />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

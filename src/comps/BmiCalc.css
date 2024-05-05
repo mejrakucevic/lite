@@ -6,28 +6,31 @@
 }
 
 body {
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(35, 35, 35);
   color: whitesmoke;
   text-align: center;
   font-family: "Kanit", sans-serif;
 }
 
+.bmiH1 {
+  margin-bottom: -10px;
+}
+
 .user-input {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Adjusted to align items to the left */
+  align-items: center; /* Center items horizontally */
   justify-content: center;
   background-color: rgb(227, 227, 227);
   width: 15%;
   margin: auto;
-
   padding: 20px;
   border-radius: 50px;
   color: rgb(17, 17, 17);
   -webkit-box-shadow: -1px 17px 46px -20px rgba(255, 255, 255, 0.77);
   -moz-box-shadow: -1px 17px 46px -20px rgba(255, 255, 255, 0.77);
   box-shadow: -1px 17px 46px -20px rgba(255, 255, 255, 0.77);
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 input:hover {
@@ -47,7 +50,12 @@ input:hover {
 }
 
 .radios h4 {
-  margin-right: 30px;
+  margin-right: 10px; /* Adjust as needed */
+  margin-left: 5px;
+}
+
+.radios input[type="radio"] {
+  margin-right: 10px;
 }
 
 .user-input button {
@@ -78,7 +86,6 @@ button:hover {
 
 .results {
   padding: 20px;
-  background-color: #36581b;
   margin: auto;
   border-radius: 40px;
   display: flex;
@@ -90,6 +97,7 @@ button:hover {
   margin: auto;
   text-align: center;
   align-items: center;
+  color: whitesmoke;
 }
 
 form {
@@ -101,6 +109,24 @@ form {
 }
 
 form h1 {
-  color: #0056b3;
-  font-weight: bold;
+  color: whitesmoke;
+  font-weight: 500;
+}
+
+.nextBtn {
+  width: 120px;
+  height: 60px;
+  border: none;
+  background-color: #0056b3;
+  margin-top: 30px;
+  color: whitesmoke;
+}
+
+.bmiP {
+  color: #8d8d8d;
+  width: 40%;
+}
+
+.p-msg {
+  margin-top: -10px;
 }

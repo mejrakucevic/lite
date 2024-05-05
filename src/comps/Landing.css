@@ -13,7 +13,9 @@ body {
   animation-duration: 2s; /* Duration of the animation */
   animation-fill-mode: forwards; /* Maintain final state after animation */
 }
-.container {
+
+.landingContainer {
+  opacity: 0.99;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,20 +23,21 @@ body {
   height: 100vh; /* Set container height to full viewport height */
 }
 
-h1 {
+.landingH1 {
   color: #8d8d8d; /* Adjust text color as needed */
   font-size: 4.5rem;
 }
 
-button {
+.landingBtn {
   padding: 10px 20px; /* Adjust padding as needed */
-  width: 150%;
+  width: 150px;
   background-color: #007bff; /* Adjust button color as needed */
   color: #e0e0e0; /* Adjust button text color as needed */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 32px; /* Adjust font size as needed */
+  margin-top: 50px;
 }
 
 button:hover {
@@ -43,4 +46,13 @@ button:hover {
 
 .h1ex {
   font-size: 1rem;
+}
+
+.landingP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 40%;
+  color: #8d8d8d;
 }
