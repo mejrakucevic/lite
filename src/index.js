@@ -5,8 +5,9 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BmiCalc from "./comps/pages/BmiCalculator";
-import Landing from "./comps/Landing";
+import Landing from "./comps/pages/Landing";
 import CalorieCalc from "./comps/pages/CalorieCounter";
+import LogIn from "./comps/pages/LogIn";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,6 +24,7 @@ root.render(
         />
         <Route path="/bmicalc" element={<BmiCalc />} />
         <Route path="/caloriecounter" element={<CalorieCalc />} />
+        <Route path="/login" element={<LogIn />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

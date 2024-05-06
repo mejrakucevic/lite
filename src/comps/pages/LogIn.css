@@ -1,0 +1,93 @@
+/* LogIn.css */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    opacity: 1; /* Fade in to full opacity */
+  }
+}
+body {
+  background-color: #171717;
+  animation-name: fadeIn; /* Name of the animation */
+  animation-duration: 2s; /* Duration of the animation */
+  animation-fill-mode: forwards; /* Maintain final state after animation */
+}
+
+.h1title {
+  font-size: 5rem;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 40vh; /* Set height to fill the viewport */
+  color: black;
+}
+
+.form-container form {
+  width: 350px;
+  height: 500px;
+  background-color: #f7f7f7;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.form-container input[type="email"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-container input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.form-container .custom-control-label {
+  margin-left: 5px;
+}
+
+.form-container .d-grid {
+  text-align: center;
+}
+
+.form-container button {
+  padding: 10px 20px; /* Adjust padding as needed */
+  width: 150px;
+  background-color: #007bff; /* Adjust button color as needed */
+  color: #e0e0e0; /* Adjust button text color as needed */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Adjust font size as needed */
+  margin-top: 10px;
+}
+
+.form-container button:hover {
+  transform: scale(103%);
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: #36581b;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  color: #007bff;
+}

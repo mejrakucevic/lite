@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../comps/Landing.css";
+import "./Landing.css";
 
 function Landing() {
   return (
@@ -14,7 +14,7 @@ function Landing() {
           Empowering you to achieve your health and fitness aspirations
           effortlessly.
         </p>
-        <Link to="/bmicalc">
+        <Link to="/login">
           <button className="landingBtn">Start</button>
         </Link>
       </div>
